@@ -1,17 +1,16 @@
-package Homework2;
+package homework2;
 
-public class task1 {
+public class Task2 {
     public static void main(String[] args) {
 
         char symbol = '*';
 
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= i; j++) {
+        for (int i = 0; i <= 5; i++) {
+            for (int j = 0; j <= 4 - i; j++) {
                 System.out.print(symbol + " ");
             }
             System.out.println();
         }
     }
-
-
 }
+

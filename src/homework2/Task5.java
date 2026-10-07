@@ -1,6 +1,6 @@
-package Homework2;
+package homework2;
 
-public class task5 {
+public class Task5 {
     static void main(String[] args) {
 
         char symbol = '*';
