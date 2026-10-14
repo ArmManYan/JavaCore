@@ -1,7 +1,8 @@
 package homeworks;
 
 public class ArrayUtil {
-    public void main(String[] args) {
+    static void main(String[] args) {
+
 
         int[] nums = {1, 6, 3, 9, 15, 52, -3, 5, 8};
 
@@ -26,14 +27,8 @@ public class ArrayUtil {
         System.out.println();
 
 //        task3
-        int max = nums[0];
 
-        for (int i = 0; i < nums.length; i++) {
-            if (max < nums[i]) {
-                max = nums[i];
-            }
-        }
-        System.out.println("Last element: " + max);
+            System.out.print("last element: " + nums[nums.length - 1]);
 
         System.out.println();
 
@@ -80,8 +75,8 @@ public class ArrayUtil {
                 odds++;
             }
         }
-        System.out.println("Even numbers count: " + odds++);
-        System.out.println("Odd numbers count: " + evens++);
+        System.out.println("Even numbers count: " + evens);
+        System.out.println("Odd numbers count: " + odds);
 
         System.out.println();
 
