@@ -19,7 +19,7 @@ public class DynamicArrayDemo {
         da2.add(12);
         da2.print();
 
-        // extend()-ի ստուգում
+
         DynamicArray da3 = new DynamicArray();
         for (int i = 1; i <= 25; i++) {
             da3.add(i);
