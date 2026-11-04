@@ -1,4 +1,4 @@
-package OOP;
+package lessonOOP;
 
 public class SimpleClass {
     static class Box {

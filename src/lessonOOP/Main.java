@@ -1,4 +1,4 @@
-package OOP;
+package lessonOOP;
 
 public class Main {
     static void main(String[] args) {
