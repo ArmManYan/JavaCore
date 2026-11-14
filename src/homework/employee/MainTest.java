@@ -9,7 +9,7 @@ public class MainTest {
         storage.add(new Employee("Karen", "Sargsyan", "A0003", 300000, "Google", "Designer"));
         storage.add(new Employee("Mari", "Avetisyan", "A0004", 450000, "Google", "Developer"));
         storage.add(new Employee("Davit", "Grigoryan", "A0005", 380000, "ITSpace", "Manager"));
-        storage.add(new Employee("Lilit", "Mkrtchyan", "A0006", 320000, "Microsoft", "Analyst")); // 6th: triggers extend()
+        storage.add(new Employee("Lilit", "Mkrtchyan", "A0006", 320000, "Microsoft", "Analyst"));
 
         System.out.println("All employees");
         storage.print();

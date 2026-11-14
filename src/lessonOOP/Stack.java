@@ -1,6 +1,6 @@
 package lessonOOP;
 
-public class TestStackDemo {
+public class Stack {
     private int[] items = new int[10];
     private int tos = -1;
 
@@ -12,4 +12,3 @@ public class TestStackDemo {
         return items[tos--];
     }
 }
-
