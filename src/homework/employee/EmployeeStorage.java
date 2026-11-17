@@ -1,7 +1,7 @@
 package homework.employee;
 
 public class EmployeeStorage {
-    Employee[] employees = new Employee[5];
+    private Employee[] employees = new Employee[5];
     private int size = 0;
 
 
@@ -17,6 +17,8 @@ public class EmployeeStorage {
         if (size == employees.length) {
             extend();
         }
+        employees[size] = employee;
+        size++;
     }
 
     public void print() {
@@ -32,10 +34,12 @@ public class EmployeeStorage {
     public void searchById(String employeeID) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getEmployeeID().equals(employeeID)) {
+                System.out.println("Employee found:");
                 System.out.println(employees[i]);
                 return;
             }
         }
+        System.out.println("Employee with ID " + employeeID + " not found.");
     }
 
     public void searchByCompany(String company) {
@@ -43,7 +47,8 @@ public class EmployeeStorage {
         for(int i = 0; i < size; i++) {
             if(employees[i].getCompany().equals(company)) {
                 System.out.println(employees[i]);
-                return;
+                System.out.println();
+                found = true;
             }
         }
         if (!found) {
